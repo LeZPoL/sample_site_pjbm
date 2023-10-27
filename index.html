@@ -14,9 +14,9 @@
   </head>
   <body>
     <div class="">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e07b39;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">E-Commerce</a>
+              <a class="navbar-brand" href="#">Vaporium Vape Shop</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,7 +31,7 @@
                       <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                   </li>
-                  <li class="nav-item dropdown" hidden>
+                  <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Settings
                     </a>
@@ -39,18 +39,18 @@
                       <li><a class="dropdown-item" href="#">Account Settings</a></li>
                       <li><a class="dropdown-item" href="#">Privacy Settings</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
                   </li>
 
                     <!--Add Items-->
                   <li class="nav-item">
-                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      Add Product
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#productAddModal">
+                      Add Product 
                     </button>
                     
                     <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="productAddModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -67,7 +67,7 @@
                               <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="input-group mb-3">
-                              <span class="input-group-text">$</span>
+                              <span class="input-group-text">₱</span>
                               <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
                               <span class="input-group-text">.00</span>
                             </div>
@@ -91,7 +91,7 @@
                   <button type="button" class="btn btn-primary position-relative">
                     Cart
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      4
+                      0
                       <span class="visually-hidden">Item count</span>
                     </span>
                   </button>
@@ -106,7 +106,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-
     <br>
 <div class="container">
   <div class="row">
@@ -175,7 +174,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-    <!--<div class="container mt-3" id="containerLogin">
+    <div class="container mt-3" id="containerLogin">
         <label><h3>Login</h3></label>
         <div class="form-floating mb-3">
             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -186,10 +185,10 @@
             <label for="floatingPassword">Password</label>
           </div>
           <button type="button" class="btn btn-outline-primary mt-1">Login</button>
-          <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Register</a>
+          <a type="button" class="btn btn-outline-success mt-1" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
           <a href="#" class="text-decoration-underline">Forgot password?</a>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -268,6 +267,6 @@
             </div>
             </div>
         </div>
-    </div>-->
+    </div>
   </body>
 </html>
