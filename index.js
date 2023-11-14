@@ -1,10 +1,7 @@
 console.log("hello world");
-
 // let btnRegister = document.getElementById("btnRegister");
 let btnRegister = document.querySelector("#btnRegister");
-
 //console.log(btnRegister);
-
 function registerUser(){
     let name = document.querySelector("#txtRegister");
     let email = document.querySelector("#txtemail");
@@ -54,8 +51,6 @@ if (!user.email){
 
     localStorage.setItem("user", JSON.stringify(user));
 }
-
-
 
 btnRegister.onClick = () => {
 
